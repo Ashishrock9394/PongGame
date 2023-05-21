@@ -15,21 +15,21 @@ public class Paddle extends Rectangle{
     public void keyPressed(KeyEvent e){
         switch(id){
             case 1:
-                if(e.getKeyCode()==KeyEvent.VK_W){
+                if(e.getKeyCode()==KeyEvent.VK_Q){
                     setYDirection(-speed);
                     move();
                 }
-                if(e.getKeyCode()==KeyEvent.VK_S){
+                if(e.getKeyCode()==KeyEvent.VK_A){
                     setYDirection(speed);
                     move();
                 }
                 break;
             case 2:
-                if(e.getKeyCode()==KeyEvent.VK_UP){
+                if(e.getKeyCode()==KeyEvent.VK_P){
                     setYDirection(-speed);
                     move();
                 }
-                if(e.getKeyCode()==KeyEvent.VK_DOWN){
+                if(e.getKeyCode()==KeyEvent.VK_L){
                     setYDirection(speed);
                     move();
                 }
@@ -40,21 +40,21 @@ public class Paddle extends Rectangle{
     public void keyReleased(KeyEvent e){
         switch(id){
             case 1:
-                if(e.getKeyCode()==KeyEvent.VK_W){
+                if(e.getKeyCode()==KeyEvent.VK_Q){
                     setYDirection(0);
                     move();
                 }
-                if(e.getKeyCode()==KeyEvent.VK_S){
+                if(e.getKeyCode()==KeyEvent.VK_A){
                     setYDirection(0);
                     move();
                 }
                 break;
             case 2:
-                if(e.getKeyCode()==KeyEvent.VK_UP){
+                if(e.getKeyCode()==KeyEvent.VK_P){
                     setYDirection(0);
                     move();
                 }
-                if(e.getKeyCode()==KeyEvent.VK_DOWN){
+                if(e.getKeyCode()==KeyEvent.VK_L){
                     setYDirection(0);
                     move();
                 }
@@ -73,7 +73,7 @@ public class Paddle extends Rectangle{
     public void draw(Graphics g){
         //set colors of paddles
         if(id==1){
-            g.setColor(Color.pink);
+            g.setColor(Color.red);
         } else {
             g.setColor(Color.green);
         }
